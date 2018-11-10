@@ -1,0 +1,23 @@
+﻿<Window x:Class="PongServer.ServerSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PongServer"
+        mc:Ignorable="d"
+        Title="ServerConfig" Height="270.031" Width="310.29">
+    <Grid>
+        <Label x:Name="label" Content="Pong Server" HorizontalAlignment="Left" Margin="10,10,0,0" FontWeight="Bold" FontSize="24" Height="42" VerticalAlignment="Top"/>
+        <Grid Margin="10,57,9.333,0" Height="137" VerticalAlignment="Top">
+            <Label x:Name="lblP1IP" Content="Player 1 IP Address:" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblP1Port" Content="Player 1 Port:" HorizontalAlignment="Left" Margin="10,41,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblP2IP" Content="Player 2 IP Address:" HorizontalAlignment="Left" Margin="10,72,0,0" VerticalAlignment="Top"/>
+            <Label x:Name="lblP2Port" Content="Player 2 Port:" HorizontalAlignment="Left" Margin="10,103,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="txtP1IP" HorizontalAlignment="Left" Height="23" Margin="128,10,0,0" TextWrapping="Wrap" Text="192.168.1.200" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtP1Port" HorizontalAlignment="Left" Height="23" Margin="128,41,0,0" TextWrapping="Wrap" Text="201" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtP2IP" HorizontalAlignment="Left" Height="23" Margin="128,72,0,0" TextWrapping="Wrap" Text="192.168.1.200" VerticalAlignment="Top" Width="120"/>
+            <TextBox x:Name="txtP2Port" HorizontalAlignment="Left" Height="23" Margin="128,103,0,0" TextWrapping="Wrap" Text="201" VerticalAlignment="Top" Width="120"/>
+        </Grid>
+        <Label x:Name="btnStart" Content="Start" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontSize="24" Foreground="Blue" MouseUp="btnStart_MouseUp" MouseEnter="btnStart_MouseEnter" MouseLeave="btnStart_MouseLeave" />
+    </Grid>
+</Window>
